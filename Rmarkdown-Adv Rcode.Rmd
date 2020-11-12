@@ -3,8 +3,9 @@ title: "chaff_project"
 author: "Sam Ross"
 date: "12/11/2020"
 output: html_document
+bibliography: ChaffRef.bib
 ---
-
+<!-- use control + shift + c to create a comment like this -->
 <!-- keep this default set up code chunk -->
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = F,
@@ -14,6 +15,14 @@ knitr::opts_chunk$set(echo = F,
 ```
 
 # **Introduction** 
+Example of a reference on a Chaffinch based paper [@Jobling] 
+
+Image
+[@Gidget]
+<!-- This adds an image onto the HTML output -->
+```{r weddell-fig, out.height="200px", fig.cap='(ref: Gidget Tinker Warrior, 2007)'}
+knitr::include_graphics("male_chaff.jpg")
+```
 
 ## *This is the introduction section which gives background on the project* 
 
