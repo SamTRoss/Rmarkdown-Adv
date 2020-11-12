@@ -7,6 +7,8 @@ bibliography: ChaffRef.bib
 ---
 <!-- use control + shift + c to create a comment like this -->
 <!-- keep this default set up code chunk -->
+
+<!-- use control + alt + i to create a code chunk -->
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = F,
                       warning = F,
@@ -17,10 +19,13 @@ knitr::opts_chunk$set(echo = F,
 # **Introduction** 
 Example of a reference on a Chaffinch based paper [@Jobling] 
 
+
+(ref:chaff-fig) <- A male Chaffinch. By Photo Gidget Tinker Warrior, 2007, https://en.wikipedia.org/wiki/Common_chaffinch#/media/File:Male_Chaffinch,_species_introduced_to_New_Zealand_in_the_1860's.jpg}
+
 Image
 [@Gidget]
 <!-- This adds an image onto the HTML output -->
-```{r weddell-fig, out.height="200px", fig.cap='(ref: Gidget Tinker Warrior, 2007)'}
+```{r weddell-fig, out.height="200px", fig.cap='(ref:chaff-fig)'}
 knitr::include_graphics("male_chaff.jpg")
 ```
 
@@ -94,5 +99,11 @@ data_summary <- function(df, measure, group) {
               n = n(({{measure}})),
               se = se(({{measure}})))
 }
+```
+
+```{r}
+t.test(data = chaff_tidy,
+       mass ~ sex,
+       var.equal = T)
 ```
 
