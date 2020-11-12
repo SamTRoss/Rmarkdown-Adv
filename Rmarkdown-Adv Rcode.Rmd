@@ -1,0 +1,23 @@
+---
+title: "chaff_project"
+author: "Sam Ross"
+date: "12/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# **Introduction** 
+
+## *This is the introduction section which gives background on the project* 
+
+# **Methods**
+## *This is the methods section that tells you how we did what we did* 
+
+# **Results** 
+
+# **Discussion** 
+
+
